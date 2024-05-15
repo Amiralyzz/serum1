@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Serum Therapy</title>
+</head>
+
+<body>
+    <header id="headerr">Serum Therapy App</header>
+    <!--input -->
+    <div id="inputPE">
+        <button onclick="changeGender()" id="genderButton">
+            Male
+        </button>
+        <label class="label" for="weight">
+            Weight:
+        </label>
+        <input type="number" name="weight" id="weightId" min="0" class="input" value="40" />
+        <label class="label" for="height">
+            Height:
+        </label>
+        <input type="number" name="height" id="heightId" min="0" class="input" value="150" />
+        <label class="label" for="impression">
+            Imp:
+        </label>
+        <select
+              title="impression"
+              name="impression"
+              id="impression"
+            >
+              <option selected value="Dehydration">Dehydration</option>
+              <option value="DKA">DKA</option>
+              <option value="G6PD" >G6PD</option>
+              <option value="Metabolic" >Metabolic</option>
+              <option value="Oliguria" >Oliguria</option>
+              <option value="Polyuria" >Polyuria</option>
+              <option value="AcidBaseDisorder" >Acid-Base</option>
+              <option value="Burn" >Burn</option>
+            </select>
+    </div>
+    <div id="inputLab">
+        <label class="label" for="Sodium">
+            Na = 
+        </label>
+        <input type="number" name="Sodium" id="sodiumId" min="0" class="input" value="140" />
+        <label class="label" for="Potassium">
+            K = 
+        </label>
+        <input type="number" name="Potassium" id="potassiumId" min="0" class="input" value="140" />
+    </div>
+</body>
+
+</html>
